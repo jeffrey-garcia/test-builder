@@ -14,6 +14,8 @@
 		006E10D82134914000D4F909 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 006E10D62134914000D4F909 /* LaunchScreen.storyboard */; };
 		006E10E32134914000D4F909 /* TestBuilderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E10E22134914000D4F909 /* TestBuilderTests.swift */; };
 		006E10EE2134914000D4F909 /* TestBuilderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E10ED2134914000D4F909 /* TestBuilderUITests.swift */; };
+		006E10FD2134918900D4F909 /* CoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E10FC2134918900D4F909 /* CoreManager.swift */; };
+		006E10FF213491FD00D4F909 /* LocalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 006E10FE213491FD00D4F909 /* LocalManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		006E10E92134914000D4F909 /* TestBuilderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestBuilderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		006E10ED2134914000D4F909 /* TestBuilderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestBuilderUITests.swift; sourceTree = "<group>"; };
 		006E10EF2134914000D4F909 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		006E10FC2134918900D4F909 /* CoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreManager.swift; sourceTree = "<group>"; };
+		006E10FE213491FD00D4F909 /* LocalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		006E10CC2134913E00D4F909 /* TestBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				006E10FB2134915C00D4F909 /* Core */,
 				006E10CD2134913E00D4F909 /* AppDelegate.swift */,
 				006E10CF2134913E00D4F909 /* ViewController.swift */,
+				006E10FE213491FD00D4F909 /* LocalManager.swift */,
 				006E10D12134913E00D4F909 /* Main.storyboard */,
 				006E10D42134914000D4F909 /* Assets.xcassets */,
 				006E10D62134914000D4F909 /* LaunchScreen.storyboard */,
@@ -123,6 +129,14 @@
 				006E10EF2134914000D4F909 /* Info.plist */,
 			);
 			path = TestBuilderUITests;
+			sourceTree = "<group>";
+		};
+		006E10FB2134915C00D4F909 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				006E10FC2134918900D4F909 /* CoreManager.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +270,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				006E10FD2134918900D4F909 /* CoreManager.swift in Sources */,
 				006E10D02134913E00D4F909 /* ViewController.swift in Sources */,
 				006E10CE2134913E00D4F909 /* AppDelegate.swift in Sources */,
+				006E10FF213491FD00D4F909 /* LocalManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +447,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3X86Z7UHK4;
+				DEVELOPMENT_TEAM = 9R44C6UQRU;
 				INFOPLIST_FILE = TestBuilder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -439,7 +455,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeffrey.mobile.TestBuilder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -449,7 +465,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3X86Z7UHK4;
+				DEVELOPMENT_TEAM = 9R44C6UQRU;
 				INFOPLIST_FILE = TestBuilder/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -457,7 +473,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jeffrey.mobile.TestBuilder;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
